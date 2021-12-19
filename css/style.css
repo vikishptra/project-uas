@@ -126,6 +126,24 @@ section{
     background-color: #28a745;
     border: 3px solid white;
 }
+#target{
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+}
+div#target::after {
+    content: "|";
+    -webkit-animation: blink 1s infinite step-start;
+            animation: blink 1s infinite step-start;
+  }
+  
+  @-webkit-keyframes blink {
+    50% { opacity: 0; }
+  }
+  
+  @keyframes blink {
+    50% { opacity: 0; }
+}
 @media(max-width: 600px) {
     .article,.article1{
         width: 90%;
