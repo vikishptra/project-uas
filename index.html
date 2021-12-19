@@ -20,12 +20,12 @@
                 alert("Terima kasih!");
             })
         })
-	function InputDelete() {
+        function InputDelete() {
             $("input:text").val("");
             $("#exampleFormControlTextarea1").val("");
         }
     </script>
-<body class="bg-dark">
+<body class="bg-dark" id="home">
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container">
             <a class="navbar-brand fw-bold" href="#">
@@ -61,7 +61,7 @@
           </nav>
         <h1 class="display-5 fw-bold fst-italic">Vicky Sahputra</h1>
         <div class="display-9" id="target"></div>
-	<div class="clear" style="clear: both;"></div>
+        <div class="clear" style="clear: both;"></div>
         <a href="image/Vicky Sahputra CV  (1) (2).pdf">
           <button class="btn btn-primary">Get CV</button></a>
       </section>
@@ -167,14 +167,14 @@
   </div>
   </div>
   <div class="md-2 fw-bold input-footer">
-    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Vicky Sahputra">
+    <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Vicky Sahputra">
   </div>
     <div class="md-2 fw-bold input-footer">
       <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
     </div>
     <div class="mb-2 fw-bold input-footer mt-3">
-      <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"placeholder="Masukkan pesan anda"></textarea>
-      <button type="submit" id="submit" class="btn btn-primary ms-1" onclick=InputDelete >Kirim</button>
+      <textarea class="form-control test" id="exampleFormControlTextarea1" rows="3" placeholder="Masukkan pesan anda"></textarea>
+      <button type="submit" id="submit" class="btn btn-primary ms-1" onclick=InputDelete()>Kirim</button>
     </div>
   </div>
 </section>
@@ -194,6 +194,7 @@
           duration: 2000
       });
   </script>
+
   <script>
       hljs.initHighlightingOnLoad();
 
@@ -203,7 +204,7 @@
           }, 2000);
       });
   </script>
-<script type="module">
+  <script type="module">
     import { type, type as loop } from 'https://unpkg.com/@camwiegert/typical';
   
   type(target, 'CYBER SECURITY.', 1000, 'UI/UX DESIGNER.', 1000, 'JUNIOR DEVELOPER.', 1000, loop);
