@@ -56,7 +56,7 @@
             </ul>
           </nav>
         <h1 class="display-5 fw-bold fst-italic">Vicky Sahputra</h1>
-        <h5 class="display-9">Penetration Testing | Cyber Security</h5>
+        <div class="display-9" id="target"></div>
         <a href="image/Vicky Sahputra CV  (1) (2).pdf">
           <button class="btn btn-primary">Get CV</button></a>
       </section>
@@ -189,7 +189,6 @@
           duration: 2000
       });
   </script>
-
   <script>
       hljs.initHighlightingOnLoad();
 
@@ -198,6 +197,11 @@
               scrollTop: $(window).height()
           }, 2000);
       });
+  </script>
+<script type="module">
+    import { type, type as loop } from 'https://unpkg.com/@camwiegert/typical';
+  
+  type(target, 'CYBER SECURITY.', 1000, 'UI/UX DESIGNER.', 1000, 'JUNIOR DEVELOPER.', 1000, loop);
   </script>
     </body>
 </html
