@@ -20,6 +20,10 @@
                 alert("Terima kasih!");
             })
         })
+	function InputDelete() {
+            $("input:text").val("");
+            $("#exampleFormControlTextarea1").val("");
+        }
     </script>
 <body class="bg-dark">
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
@@ -166,11 +170,11 @@
     <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Vicky Sahputra">
   </div>
     <div class="md-2 fw-bold input-footer">
-      <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+      <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
     </div>
     <div class="mb-2 fw-bold input-footer mt-3">
-      <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Masukkan pesan anda"></textarea>
-      <button type="submit" id="submit" class="btn btn-primary ms-1">Kirim</button>
+      <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"placeholder="Masukkan pesan anda"></textarea>
+      <button type="submit" id="submit" class="btn btn-primary ms-1" onclick=InputDelete >Kirim</button>
     </div>
   </div>
 </section>
